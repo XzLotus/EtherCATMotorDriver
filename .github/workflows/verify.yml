@@ -1,0 +1,15 @@
+name: Verify public portfolio
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check public file allowlist and digests
+        run: python3 tools/check_public_release.py
+      - name: Build and execute portable demo and tests
+        run: python3 tools/build_and_test.py
