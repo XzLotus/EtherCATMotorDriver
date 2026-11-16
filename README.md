@@ -4,6 +4,9 @@
 
 原工程采用 **N32G455 / ARM Cortex-M4 / C / Keil MDK**，采用北京方芯公司的集成 EtherCAT芯片：FCM4E1553、CiA402 状态与模式处理、RS485 Modbus RTU、CAN 和参数存储。本公开版选取通信与外设模块，电机驱动算法、运动规划、整定参数及固件已移除。
 
+独立焊接的成品驱动器：
+<img width="1280" height="1894" alt="bf0f20722338a3ba7de8984754d3d042" src="https://github.com/user-attachments/assets/ab3cd1c9-c4d1-4ac0-8fdb-5d6c7f5266dd" />
+
 ## 先看这几处
 
 | 阅读入口 | 展示内容 |
