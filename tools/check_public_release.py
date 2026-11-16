@@ -69,7 +69,16 @@ def main():
                             + '\n', encoding='utf-8', newline='\n')
     saved = json.loads(MANIFEST.read_text(encoding='utf-8'))
     if saved != {'version': 1, 'files': digests}:
-        raise SystemExit('Public file digests changed; review before refreshing the manifest.')
+        saved_files = saved.get('files', {}) if isinstance(saved, dict) else {}
+        changed = sorted(name for name in set(saved_files) | set(digests)
+                         if saved_files.get(name) != digests.get(name))
+        details = '\n'.join(f'  {name}' for name in changed)
+        raise SystemExit(
+            'Public file digests changed:\n'
+            + (details or '  manifest version or format')
+            + '\nReview the changes, then refresh the manifest:\n'
+            '  python tools/check_public_release.py --refresh-manifest\n'
+            'Commit public-files.json together with the reviewed changes.')
     print(f'PASS: {len(expected)} public text files; explicit allowlist and SHA-256 verified')
 
 

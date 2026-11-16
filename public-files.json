@@ -4,11 +4,11 @@
     ".gitattributes": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
     ".github/workflows/verify.yml": "6616573fda530c1534108ae71f95750346687e62d55f986092f2a6a89fb4b928",
     ".gitignore": "1a6e968f437d2ec6f7df9082a72e1bb25bef84dcd443121239e67f1f8e902129",
-    "README.md": "3aaab38b79479a9c5dc13c024a18e272664b8f39548bbc65a009a1e8f3285e9d",
+    "README.md": "5f8370211e633557a79eaf66e48e516038c6275e5b84c0a6f3df3bbec264f390",
     "docs/architecture.md": "66e34c7df1c8f94b51c2d7c880740e23ce002da884dd2bb3fcefd755aacddf03",
     "docs/code-tour.md": "aff44188d3fed57bf4e4ef23bb560005264d1878ffe428d10ae65a5026fd270f",
-    "docs/sanitization.md": "366e431909f106a0ae4b23aeed011a0c7ca613184779cc0eb127fca1758a9a15",
-    "docs/verification.md": "1fed6ab99d27b21a7d6ee47e232c401661642a4f83d6f80edfc1037959c840b2",
+    "docs/sanitization.md": "42d87d4654d07e4654d866974745bd1315a30b39f1c60ba3250543d3eba10c33",
+    "docs/verification.md": "816e42393fab1be2b7c260156aad63fbd8983197b761a5d1b2d7a371da978adf",
     "examples/host_demo.c": "d47a8e69778ac1c9250b368ffa4aa8c7b97deeb62c674bac46292e96380b63af",
     "include/modbus.h": "bb038abf76a83cc32fcb522f17267e0d7120a14812fc5c4e9cfa3a60414100d4",
     "include/motor_backend.h": "987dde6dfad3d2caa5807b92e99a0e4a47e330ac5fb9ff131b0427b53284de13",
@@ -29,6 +29,6 @@
     "tests/test_protocol.c": "884432063e3636d955c0d39171f532f5f507b9c8ff37949b48c8dfc4abe3b790",
     "tests/test_redacted_motor.c": "4903810073a35880412153c34af860b150b474a04592ffe5fe6a4dd2d55fbac5",
     "tools/build_and_test.py": "d9a586285cc34994370273429a2c55de6373b18bb05db20c61d71a9351b16e49",
-    "tools/check_public_release.py": "7a434cc47e534a8863999956ba44274cc4c0c6b4cd3f9180f5302c8c42940fd0"
+    "tools/check_public_release.py": "00952cdfc936a13b3e784417508e8b163179c855d587ab6a9e5d1db3fcff291d"
   }
 }
