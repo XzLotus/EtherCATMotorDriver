@@ -1,8 +1,8 @@
-# 嵌入式电机驱动系统 · 脱敏代码展示
+# 工业以太网电机驱动器
 
-面向招聘与技术交流的项目代码样例，展示工业通信、外设驱动、模块拆分和异常处理能力。
+仅做项目代码展示，展示工业通信、外设驱动、模块拆分和异常处理能力。
 
-原工程采用 **N32G455 / ARM Cortex-M4 / C / Keil MDK**，集成 EtherCAT 从站应用、CiA402 状态与模式处理、RS485 Modbus RTU、CAN 和参数存储。本公开版选取通信与外设模块，电机驱动算法、运动规划、整定参数及固件产物已移除。
+原工程采用 **N32G455 / ARM Cortex-M4 / C / Keil MDK**，集成 EtherCAT 从站应用、CiA402 状态与模式处理、RS485 Modbus RTU、CAN 和参数存储。本公开版选取通信与外设模块，电机驱动算法、运动规划、整定参数及固件已移除。
 
 ## 先看这几处
 
@@ -48,11 +48,11 @@ PASS: all portable targets compiled with warnings treated as errors
 ```text
 include/            可移植协议、传输接口、电机脱敏接口
 src/protocol/       从原工程提取的 Modbus RTU 模块
-src/motor/          新增的脱敏电机后端
+src/motor/          新增的去敏感代码电机代码
 ports/host/         主机测试用内存传输适配器
 ports/n32/          从原工程提取的 N32 通信与外设源码
 examples/           可直接运行的主机演示
-tests/              协议行为与脱敏后端测试
+tests/              协议行为与去敏感的后端测试
 tools/              编译验证、公开文件清单与内容检查
 docs/               架构、源码导读、脱敏说明与验证记录
 ```
@@ -64,4 +64,4 @@ docs/               架构、源码导读、脱敏说明与验证记录
 - **硬件阅读部分**：`ports/n32/` 使用厂商 SDK 接口，需要另行准备 SDK、启动文件和目标板工程；当前默认构建覆盖可移植模块与主机演示。
 - **第三方依赖**：厂商 SDK、EtherCAT 从站协议栈及其生成文件由各自渠道获取，公开包仅保留相关集成结构说明。
 
-[脱敏说明与公开清单](docs/sanitization.md) · [验证记录与待验证项目](docs/verification.md)
+[去敏感说明与公开清单](docs/sanitization.md) · [验证记录与待验证项目](docs/verification.md)
