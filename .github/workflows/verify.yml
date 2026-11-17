@@ -1,0 +1,15 @@
+name: Verify hub motor public samples
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check public file allowlist and source digests
+        run: python3 tools/check_public_release.py
+      - name: Build and execute public host samples
+        run: python3 tools/build_and_test.py

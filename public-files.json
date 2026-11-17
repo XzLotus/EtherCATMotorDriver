@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "source_and_config_sha256": {
+    ".gitattributes": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+    ".github/workflows/verify.yml": "49dc61a117acc08eca8a8eec5f73caa082527db9022ad7eb3c89f0446215b1b9",
+    ".gitignore": "2aaae5813c65aed0c560bd56289c3aee27a4be4429896ae1a7cf0bf1b17283fd",
+    "examples/host_demo.c": "7b9582b15691815ad2b51755b7fd0f905b0e7086f2ca9f2c4b38678d89d0e4bf",
+    "include/demo_modbus.h": "448cd3c28e1eb3c5490ec276eca60674f7580aad1d7dd7cc8471abe94821ff0a",
+    "include/demo_telemetry.h": "b6ec85c20685d97c6224374816adf916b638ac47de1789850c3b9148802b1cb4",
+    "include/redacted_drive.h": "35d6278212cdcfd13a5e798f6791a20103f0ec4d03e28db3af83d287f3822042",
+    "reference/haawking_sci_rx.c": "4d996e1187c3ccd8a7dc1f0851c611dd28a798f4fdae218b8052a4545e5d40f6",
+    "src/comms/crc16.c": "93497287a03cfd780f8b6bdf227e73ded69a8261e9eb2d0401a54babbd3d4aea",
+    "src/comms/modbus_demo.c": "6a20089df241cbb6d8560d732250ca4d9886f7a9fd0db4808fdead3afa0578ad",
+    "src/drive/redacted_drive.c": "9ee33bb3391815d248e4292bd08cb3ff8942fec1d817590c11fb18bd22803356",
+    "src/telemetry/demo_telemetry.c": "6825e513945753deaab900e12bb80784c1807615f6306755dd64318d1ed96598",
+    "tests/test_modbus.c": "4a8b2650da6186dcd97962352e6765e1a6b7ce265393c85338edab6c75ca1700",
+    "tests/test_public_modules.c": "70c91ab5c936ccc6521e0f139f885d904e31e443571c580410a0ebea1d8eb546",
+    "tools/build_and_test.py": "8f561e086d63328a8954f53c54a2fbbed9702f9c1211e58df8e981ba10a59be7",
+    "tools/check_public_release.py": "3fcd958b4f0e0dad806a3b597abf390a46587e35069fd6186d2dbcf8ce71ffbf"
+  }
+}
